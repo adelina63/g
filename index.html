@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://themes.webuniverseua.com/courses/HTML_CSS/theme24/resources/task1/background.jpg);
+            background-size: cover;
+            font: "Monotype Corsiva";
+            text-align: center;
+        }
+
+        .traffic-light {
+            width: 150px;
+            height: 400px;
+            background-color: #333;
+            border-radius: 30px;
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center
+        }
+
+        .light {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: gray;
+        }
+
+        .text {
+            font-size: 60px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .stop,
+        .wait,
+        .go,
+        .info {
+            display: none;
+        }
+
+        .info {
+            width: 50%;
+            max-height: 500px;
+            margin: 20px auto;
+            background-color: rgba(230, 230, 230, 0.8);
+            border: 2px solid #4CAF50;
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 50px;
+            overflow: auto;
+        }
+
+        .info::-webkit-scrollbar {
+            width: 20px;
+        }
+
+        .info::-webkit-scrollbar-thumb {
+            background-color: lightblue;
+        }
+
+        .info::-webkit-scrollbar-track {
+            background-color: gold;
+        }
+
+        @media (max-width: 2000px) {
+            .red {
+                background: red;
+            }
+
+            
+
+            .stop {
+                display: block;
+                color: red;
+            }
+        }
+
+        @media (min-width: 2001px) and (max-width: 3000px) {
+            .yellow {
+                background: yellow;
+            }
+
+            
+
+            .wait {
+                display: block;
+                color: orange;
+            }
+        }
+
+        @media (min-width: 3001px) {
+            .green {
+                background: limegreen;
+            }
+
+            
+
+            .go {
+                display: block;
+                color: green;
+            }
+
+            
+
+            .info {
+                display: block;
+            }
+
+            
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="traffic-light">
+        <div class="light red"></div>
+        <div class="light yellow"></div>
+        <div class="light green"></div>
+    </div>
+    <div class="text stop">СТОП</div>
+    <div class="text wait">ГОТУЙСЯ</div>
+    <div class="text go">РУШАЙ</div>
+    <div class="info"><strong>Безпека на дорозі — це важливо!</strong><br><br>
+        Переходь дорогу тільки на зелене світло. Не поспішай — навіть коли машин немає поблизу.
+        Завжди дивись ліворуч і праворуч перед тим, як ступити на перехід.
+        Не користуйся телефоном під час переходу — уважність може врятувати життя.
+        За статистикою, щороку понад <strong>30% дорожніх аварій</strong> стаються через неуважність пішоходів.
+        Будь прикладом для інших і пам’ятай: безпека починається з тебе!<br>
+        Головні правила:<br>
+        Переходь дорогу тільки на зелене світло.<br>
+        Дивись по сторонах перед переходом.<br>
+        Не користуйся телефоном на переході.<br>
+        Будь уважним — це збереже життя!</div>
+</body>
+
+</html>
